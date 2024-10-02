@@ -1,0 +1,22 @@
+﻿<Window x:Class="Demo07.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Margin="10">
+            <!-- Botón para Listar Facturas -->
+            <Button Name="btnListarFacturas" Content="Listar Facturas" Width="150" Height="25" Click="btnListarFacturas_Click"/>
+
+            <!-- Campos para los parámetros del procedimiento -->
+            <TextBox Name="txtInvoiceId" Width="200" Margin="0,10,0,0" />
+            <TextBox Name="txtCustomerId" Width="200" Margin="0,10,0,0" />
+            <DatePicker Name="dpDate" Margin="0,10,0,0" />
+            <TextBox Name="txtTotal" Width="200" Margin="0,10,0,0" />
+            <CheckBox Name="chkActive" Content="Active" Margin="0,10,0,0"/>
+            <TextBox Name="txtNumeroFactura" Width="200" Margin="0,10,0,0" />
+
+            <!-- DataGrid para mostrar las facturas -->
+            <DataGrid Name="dgvFacturas" Margin="10,10,10,10" AutoGenerateColumns="True"/>
+        </StackPanel>
+    </Grid>
+</Window>
